@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<!-- Reset CSS -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+	<!-- Bootstrap Styling for Improving the Aesthetics -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Moment -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<!-- Links to Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/live/3.6/firebase.js"></script>
+	<title>It's Train Time!</title>
+
+</head>
+
+<body>
+
+	<div class="jumbotron">It's Train Time!</div>
+
+
+	<div class="row">
+		<div class="col-sm-12">
+			<br>
+			<!-- First panel is for handling the search parameters -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<strong>Current Train Schedule:</strong>
+					</h3>
+				</div>
+				<div class="panel-body">
+
+					<div id="flex-container">
+						<table class="table table-hover" id="trainTable">
+							<thead>
+								<tr>
+									<strong>
+										<th>Train Name</th>
+										<th>Destination</th>
+										<th>Frequency (min)</th>
+										<th>Next Arrival</th>
+										<th>Minutes Away</th>
+									</strong>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="row">
+		<div class="col-sm-12">
+			<br>
+			<!-- First panel is for handling the search parameters -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<strong>Add A Train:</strong>
+					</h3>
+				</div>
+				<div class="panel-body">
+
+					<!-- Here we create an HTML Form for handling the inputs-->
+					<form role="form">
+
+						<!-- Here we create the text box for capturing the search term-->
+						<div class="form-group">
+							<label for="search">Train Name</label>
+							<input type="text" class="form-control" id="train-name">
+						</div>
+
+						<!-- Here we capture the number of records that the user wants to retrieve  -->
+						<div class="form-group">
+							<label for="pwd">Destination</label>
+							<input type="text" class="form-control" id="destination">
+						</div>
+
+						<!-- Here we capture the Start Year Parameter-->
+						<div class="form-group">
+							<label for="start-year">First Train Time(HH:mm - military time)</label>
+							<input type="text" class="form-control" id="first-train-time">
+						</div>
+
+						<!-- Here we capture the End Year Parameter -->
+						<div class="form-group">
+							<label for="end-year">Frequency (min)</label>
+							<input type="text" class="form-control" id="frequency">
+						</div>
+
+						<!-- Here we have our final submit button -->
+						<button type="submit" class="btn btn-default" id="submit-trains">
+							Submit</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="assets/javascript/app.js">
+
+
+</script>
+
+</html>

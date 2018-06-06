@@ -1,0 +1,39 @@
+body {
+    background: url('../images/firebase-bg.png') no-repeat center center fixed;
+    margin: 0;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0; 
+
+    width: 100%;
+    color: white;
+}
+
+.jumbotron {
+background-color: #3C11AD;
+color: white;
+margin: 1%;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 65px;
+padding: 10px;
+align-content: center;
+text-align: center;
+border-radius: 10px;
+}
+
+.panel > .panel-heading  {
+    background-color: #3C11AD;
+}
+
+.panel {
+    background-color: #B89DFE;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+tr {
+margin-left:3%;
+margin-right:3%;
+}
